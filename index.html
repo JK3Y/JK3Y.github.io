@@ -1,1 +1,51 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <!--<base href="/">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Amador, Web Developer</title>
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,300" type="text/css">
+    <link rel="stylesheet" href="src/css/style.css" />
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+<div class="container">
+
+    <!-- begin nav bar -->
+    <div class="navbar clearfix">
+        <div class="navbar-header">
+            <a href="#/">Jacob Amador</a>
+        </div>
+
+        <div class="navbar-links">
+            <ul class="float-right-inline-list">
+                <li><a href="#resume">Résumé</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end nav bar -->
+
+    <div class="row">
+        <!-- angular injection -->
+        <div ng-view></div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="modal-footer">
+        <span>&copy; jacob amador</span>
+    </div>
+
+</div>
+</body>
+</html>
